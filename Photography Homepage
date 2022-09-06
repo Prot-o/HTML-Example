@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head lang="en-us">
+    <link rel="stylesheet" href="Photography Homepage.css">
+    <link rel="stylesheet" href="Navbar.CSS">
+
+</head>
+<body id="body">
+    <div class="topnav">
+        <p id="menutitle">
+            <a class="active" href="liamsbarro.com" id="home-topnav">
+                <img src="icons/Favicon.png" id="topnavf">
+            </a>
+            <a id="home-topnav" href="#home">Liam Sbarro</a>
+            <a id="email-topnav" target="_top" href="mailto:liam.sbarro@gmail.com?">Contact</a>
+            <a id="photography-topnav" href="#photography">Photography</a>  
+            <a id="ai-art-topnav" href="ai-art">Ai-Art</a>
+            <a id="about-topnav" href="about">About</a>
+        </p>
+    </div>
+    <div class="row">
+        <div class="column" class="container">
+            <p class="centered"></p>
+            <a>
+                <img src="Homepage Images/archetecture_homepage.jpg" alt="archetecture" width="100%">
+            </a>
+        </div>
+        <div class="column" class="container">
+            <a>
+                <img src="homepage images/cars_homepage.jpg" alt="cars" width="100%">
+            </a>
+        </div>
+        <div class="column" class="container">
+            <a>
+                <img src="homepage images/landscape_homepage.jpg" alt="landscapes" width="100%">
+            </a>
+        </div>
+        <div class="column" class="container">
+            <a href="Subpages/Projects/projects">      
+                <img src="homepage images/projects_homepage.jpg" alt="projects" width="100%"> 
+            </a>
+        </div>
+    </div>
+</body>
+

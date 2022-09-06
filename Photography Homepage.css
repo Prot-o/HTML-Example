@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family:Padauk;
+    src: url(Padauk/Padauk-Regular.ttf);
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    display: block  ;
+  }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+    padding: 10px;
+    background-color: rgb(64, 84, 57);
+}
+
+* {
+    box-sizing: border-box;
+  }
+#body {
+    background-color: rgb(250, 242, 230);
+}
+.centered {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;
+    font-family:Padauk;
+    color: rgb(41, 67, 43);
+    font-size: 200%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }

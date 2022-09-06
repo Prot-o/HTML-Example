@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Projects</title> 
+    </Head>
+    <body style="background-color:rgb(213, 212, 197) ;">
+        <div class="topnav">
+            <p id="menutitle">
+                <a class="active" href="liamsbarro.com" id="home-topnav">
+                    <img src="icons/Favicon.png" id="topnavf">
+                </a>
+                <a id="home-topnav" href="#home">Liam Sbarro</a>
+                <a id="email-topnav" target="_top" href="mailto:liam.sbarro@gmail.com?">Contact</a>
+                <a id="photography-topnav" href="#photography">Photography</a>  
+                <a id="ai-art-topnav" href="ai-art">Ai-Art</a>
+                <a id="topnav-icon" href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </p>
+           
+
+        </div>
+        <div class="gallery" style="background-color:rgb(50, 72, 50); padding-left: 5px; padding-right: 5px; padding-bottom: 5px;padding-top: 5px;">
+            <h1 style="text-align:center ;color: blanchedalmond;">Keyboard & Light art</h1>
+            <a target="_blank" href="Photos-Projects/Hands_Keyboard_Projects.jpg">
+                <img src="Photos-Projects/Hands_Keyboard_Projects.jpg" alt="img1" width="74.1%" height="auto" style="padding-left:0.9667%; ; padding-right:auto;" class="image">
+            </a>
+            <a target="_blank" href="Photos-Projects/Portrait_Keyboard_Projects.jpg">
+                <img src="Photos-Projects/Portrait_Keyboard_Projects.jpg" alt="img2" width="23%" height="auto" style="padding-left:auto ; padding-right:0.9667%;" class="image">
+            </a>
+        </div>
+        <div class="gallery" style="background-size: inherit; background-color: rgb(96, 130, 96); padding-left: 5px; padding-right: 5px; padding-bottom: 5px; padding-top: 5px;">
+             <a target="_blank" href="Photos-Projects/Portrait2.jpg">
+                 <img src="Photos-Projects/Portrait2.jpg" alt="img2" width="23%" height="auto" style="padding-left:0.9667%; padding-right:auto;" class="image">
+             </a>
+              <a target="_blank" href="Photos-Projects/Hands_Keyboard2.jpg">
+                 <img src="Photos-Projects/Hands_Keyboard2.jpg" alt="img1" width="74.1%" height="auto" style="padding-left:auto; ; padding-right:0.9667%;" class="image">
+             </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav")
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav"
+                }
+            }
+        </script>
+    
+    </body>
+</html>
