@@ -1,0 +1,69 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class drivingscript : MonoBehaviour
+{
+    public WheelJoint2D frontwheel,backwheel;
+    private JointMotor2D frontmotor,backmotor;
+    public float SpeedForward;
+    public float SpeedBackward;
+    public float torque;
+    public float SpeedStopped;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+ 
+
+            if (Input.GetKeyDown("d"))
+            {
+                 backmotor.motorSpeed = SpeedForward;
+                 frontmotor.motorSpeed = SpeedForward;
+
+                 backmotor.maxMotorTorque = torque;
+                 frontmotor.maxMotorTorque = torque;
+
+                 frontwheel.motor = frontmotor;
+                 backwheel.motor = backmotor;
+            }
+            if (Input.GetKeyUp("d"))
+            {
+                 backmotor.motorSpeed = SpeedStopped;
+                 frontmotor.motorSpeed = SpeedStopped;
+
+                 backmotor.maxMotorTorque = torque;
+                 frontmotor.maxMotorTorque = torque;
+
+                 frontwheel.motor = frontmotor;
+                 backwheel.motor = backmotor;
+            }
+            if (Input.GetKeyDown("a"))
+            {
+                backmotor.motorSpeed = SpeedBackward;
+                 frontmotor.motorSpeed = SpeedBackward;
+
+                 backmotor.maxMotorTorque = torque;
+                 frontmotor.maxMotorTorque = torque;
+
+                 frontwheel.motor = frontmotor;
+                 backwheel.motor = backmotor;
+            }
+               if (Input.GetKeyUp("a"))
+            {
+                 backmotor.motorSpeed = SpeedStopped;
+                 frontmotor.motorSpeed = SpeedStopped;
+
+                 backmotor.maxMotorTorque = torque;
+                 frontmotor.maxMotorTorque = torque;
+
+                 frontwheel.motor = frontmotor;
+                 backwheel.motor = backmotor;
+            }
+    }
+}
